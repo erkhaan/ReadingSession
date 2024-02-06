@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		CEC40F432B66556800ACDBF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC40F422B66556800ACDBF1 /* AppDelegate.swift */; };
 		CEC40F452B66556800ACDBF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC40F442B66556800ACDBF1 /* SceneDelegate.swift */; };
-		CEC40F472B66556800ACDBF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC40F462B66556800ACDBF1 /* ViewController.swift */; };
+		CEC40F472B66556800ACDBF1 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC40F462B66556800ACDBF1 /* BooksViewController.swift */; };
 		CEC40F4A2B66556800ACDBF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC40F482B66556800ACDBF1 /* Main.storyboard */; };
 		CEC40F4C2B66556900ACDBF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC40F4B2B66556900ACDBF1 /* Assets.xcassets */; };
 		CEC40F4F2B66556900ACDBF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC40F4D2B66556900ACDBF1 /* LaunchScreen.storyboard */; };
+		CEC40F582B667B0E00ACDBF1 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC40F572B667B0E00ACDBF1 /* Book.swift */; };
+		CEC40F5A2B69378000ACDBF1 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC40F592B69378000ACDBF1 /* Session.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEC40F3F2B66556800ACDBF1 /* ReadingSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadingSession.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC40F422B66556800ACDBF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC40F442B66556800ACDBF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEC40F462B66556800ACDBF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEC40F462B66556800ACDBF1 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		CEC40F492B66556800ACDBF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEC40F4B2B66556900ACDBF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC40F4E2B66556900ACDBF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEC40F502B66556900ACDBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC40F572B667B0E00ACDBF1 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		CEC40F592B69378000ACDBF1 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		CEC40F412B66556800ACDBF1 /* ReadingSession */ = {
 			isa = PBXGroup;
 			children = (
+				CEC40F562B667AF900ACDBF1 /* Model */,
 				CEC40F422B66556800ACDBF1 /* AppDelegate.swift */,
 				CEC40F442B66556800ACDBF1 /* SceneDelegate.swift */,
-				CEC40F462B66556800ACDBF1 /* ViewController.swift */,
+				CEC40F462B66556800ACDBF1 /* BooksViewController.swift */,
 				CEC40F482B66556800ACDBF1 /* Main.storyboard */,
 				CEC40F4B2B66556900ACDBF1 /* Assets.xcassets */,
 				CEC40F4D2B66556900ACDBF1 /* LaunchScreen.storyboard */,
 				CEC40F502B66556900ACDBF1 /* Info.plist */,
 			);
 			path = ReadingSession;
+			sourceTree = "<group>";
+		};
+		CEC40F562B667AF900ACDBF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEC40F572B667B0E00ACDBF1 /* Book.swift */,
+				CEC40F592B69378000ACDBF1 /* Session.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC40F472B66556800ACDBF1 /* ViewController.swift in Sources */,
+				CEC40F5A2B69378000ACDBF1 /* Session.swift in Sources */,
+				CEC40F582B667B0E00ACDBF1 /* Book.swift in Sources */,
+				CEC40F472B66556800ACDBF1 /* BooksViewController.swift in Sources */,
 				CEC40F432B66556800ACDBF1 /* AppDelegate.swift in Sources */,
 				CEC40F452B66556800ACDBF1 /* SceneDelegate.swift in Sources */,
 			);

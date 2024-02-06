@@ -11,6 +11,10 @@ final class BooksViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigationItem()
+    }
+    
+    private func setupNavigationItem() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .add,
             target: self,

@@ -11,6 +11,7 @@ import SnapKit
 final class BooksViewController: UIViewController {
     
     private var tableView = UITableView(frame: .zero, style: .plain)
+    private var booksModel = [Book]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +41,16 @@ final class BooksViewController: UIViewController {
     }
     
     @objc private func addBook() {
-        
+        booksModel.append(
+            Book(title: "Title", author: "Author"))
+        tableView.reloadData()
+    }
+    
+    private func setupCellListConfiguration(_ cell: UITableViewCell) {
+        var content = cell.defaultContentConfiguration()
+        content.text = "Test Book"
+        content.secondaryText = "Test Author"
+        cell.contentConfiguration = content
     }
 }
 
@@ -51,10 +61,14 @@ extension BooksViewController: UITableViewDelegate {
 
 extension BooksViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        booksModel.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        UITableViewCell()
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: "cell",
+            for: indexPath)
+        setupCellListConfiguration(cell)
+        return cell
     }
 }

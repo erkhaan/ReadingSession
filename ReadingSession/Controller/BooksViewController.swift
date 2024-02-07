@@ -10,7 +10,7 @@ import SnapKit
 
 final class BooksViewController: UIViewController {
     
-    private var tableView = UITableView(frame: .zero, style: .plain)
+    private let tableView = UITableView(frame: .zero, style: .plain)
     private var booksModel = [Book]()
 
     override func viewDidLoad() {

@@ -34,6 +34,7 @@ final class BooksViewController: UIViewController {
     }
     
     private func setupNavigationItem() {
+        navigationItem.title = "Books"
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .add,
             target: self,
@@ -55,7 +56,14 @@ final class BooksViewController: UIViewController {
 }
 
 extension BooksViewController: UITableViewDelegate {
-    
+    func tableView(
+        _ tableView: UITableView,
+        didSelectRowAt indexPath: IndexPath
+    ) {
+        let vc = SessionsViewController()
+        navigationController?.pushViewController(vc, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
 

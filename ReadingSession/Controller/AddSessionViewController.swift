@@ -1,14 +1,14 @@
 //
-//  SessionsViewController.swift
+//  AddSessionViewController.swift
 //  ReadingSession
 //
-//  Created by Erkhaan  on 07.02.2024.
+//  Created by Erkhaan  on 10.02.2024.
 //
 
 import UIKit
 import SnapKit
 
-final class SessionsViewController: UIViewController {
+final class AddSessionViewController: UIViewController {
     
     private let tableView = UITableView(frame: .zero, style: .plain)
     private var sessionsModel = [Session]()
@@ -29,10 +29,6 @@ final class SessionsViewController: UIViewController {
     
     private func setupNavigationItem() {
         navigationItem.title = "Sessions"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: .add,
-            target: self,
-            action: #selector(addSession))
     }
     
     private func setupLayout() {
@@ -41,26 +37,13 @@ final class SessionsViewController: UIViewController {
         }
     }
     
-    @objc private func addSession() {
-//        sessionsModel.append(
-//            Session(
-//                startTime: Date(timeIntervalSinceNow: .zero),
-//                finishTime: Date(timeIntervalSinceNow: .zero),
-//                kindlePrediction: Date(timeIntervalSinceNow: .zero)))
-        let vc = AddSessionViewController()
-        present(vc, animated: true, completion: nil)
-        tableView.reloadData()
-    }
-    
     private func setupCellListConfiguration(_ cell: UITableViewCell) {
         var content = cell.defaultContentConfiguration()
-        content.text = "Test"
-        content.secondaryText = "Test"
         cell.contentConfiguration = content
     }
 }
 
-extension SessionsViewController: UITableViewDelegate {
+extension AddSessionViewController: UITableViewDelegate {
     func tableView(
         _ tableView: UITableView,
         didSelectRowAt indexPath: IndexPath
@@ -70,12 +53,12 @@ extension SessionsViewController: UITableViewDelegate {
 }
 
 
-extension SessionsViewController: UITableViewDataSource {
+extension AddSessionViewController: UITableViewDataSource {
     func tableView(
         _ tableView: UITableView,
         numberOfRowsInSection section: Int
     ) -> Int {
-        sessionsModel.count
+        0
     }
     
     func tableView(
@@ -85,7 +68,6 @@ extension SessionsViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(
             withIdentifier: "cell",
             for: indexPath)
-        setupCellListConfiguration(cell)
         return cell
     }
 }

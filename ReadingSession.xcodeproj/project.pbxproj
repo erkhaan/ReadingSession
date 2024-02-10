@@ -10,6 +10,7 @@
 		CE016E012B72A92C004EA5E4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE016E002B72A92C004EA5E4 /* SnapKit */; };
 		CE016E032B72A92C004EA5E4 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CE016E022B72A92C004EA5E4 /* SnapKit-Dynamic */; };
 		CE016E062B734A40004EA5E4 /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE016E052B734A40004EA5E4 /* SessionsViewController.swift */; };
+		CE98E13E2B77980900CFBA76 /* AddSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98E13D2B77980900CFBA76 /* AddSessionViewController.swift */; };
 		CEC40F432B66556800ACDBF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC40F422B66556800ACDBF1 /* AppDelegate.swift */; };
 		CEC40F452B66556800ACDBF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC40F442B66556800ACDBF1 /* SceneDelegate.swift */; };
 		CEC40F472B66556800ACDBF1 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC40F462B66556800ACDBF1 /* BooksViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		CE016E052B734A40004EA5E4 /* SessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
+		CE98E13D2B77980900CFBA76 /* AddSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSessionViewController.swift; sourceTree = "<group>"; };
 		CEC40F3F2B66556800ACDBF1 /* ReadingSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadingSession.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC40F422B66556800ACDBF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC40F442B66556800ACDBF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			children = (
 				CEC40F462B66556800ACDBF1 /* BooksViewController.swift */,
 				CE016E052B734A40004EA5E4 /* SessionsViewController.swift */,
+				CE98E13D2B77980900CFBA76 /* AddSessionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				CEC40F5A2B69378000ACDBF1 /* Session.swift in Sources */,
 				CE016E062B734A40004EA5E4 /* SessionsViewController.swift in Sources */,
 				CEC40F582B667B0E00ACDBF1 /* Book.swift in Sources */,
+				CE98E13E2B77980900CFBA76 /* AddSessionViewController.swift in Sources */,
 				CEC40F472B66556800ACDBF1 /* BooksViewController.swift in Sources */,
 				CEC40F432B66556800ACDBF1 /* AppDelegate.swift in Sources */,
 				CEC40F452B66556800ACDBF1 /* SceneDelegate.swift in Sources */,
